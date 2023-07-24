@@ -3,3 +3,35 @@
     padding: 0;
     box-sizing: border-box;
  }
+
+ :root {
+    --bl-blue: #006cfa ;
+    --bl-white: white;
+    --bl-green: #00e165;
+ }
+
+ [class*="col-"]{
+    min-height: 3rem;
+    background-color: var(--bl-blue);
+    color: var(--bl-white);
+    border: 1px solid;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 0.4rem;
+    font-size:0.6rem;
+}
+
+[class*="col-offset-"]{
+    background-color: transparent;
+}
+
+
+[class*="col-"]>[class*="col-"]{
+    background-color: var(--bl-green);
+    border-color: var(--bl-blue);
+}
+
+.container{
+    padding-bottom: 1rem;
+}
